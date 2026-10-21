@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F6F2E9;
+    --color-sage: #A8B5A0;
+    --color-forest: #263C32;
+    --color-forest-dark: #1C2E26;
+    --color-forest-light: #324D41;
+    --color-taupe: #B9A58C;
+    --color-champagne: #D6C3A1;
+    --color-champagne-light: #E8DCC9;
+    --color-charcoal: #292B28;
+    --color-charcoal-light: #3D403B;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F6F2E9;
+    color: #292B28;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F6F2E9;
+}
+::-webkit-scrollbar-thumb {
+  background: #B9A58C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8B5A0;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #263C32;
+  outline-offset: 3px;
+}
+
+/* Cursor custom styling for desktop */
+@media (hover: hover) and (pointer: fine) {
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Fine hairline divider */
+.hairline-b {
+  border-bottom: 1px solid rgba(41, 43, 40, 0.08);
+}
+.hairline-t {
+  border-top: 1px solid rgba(41, 43, 40, 0.08);
+}
+.hairline-border {
+  border: 1px solid rgba(41, 43, 40, 0.1);
+}
